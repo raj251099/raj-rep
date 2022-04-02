@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js String methods</h2>
+<p id="title"></p>
+<p id="demo"></p>
+<p id="title1"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="title2"></p>
+<p id="demo5"></p>
+<p id="title3"></p>
+<p id="demo6"></p>
+<p id="title4"></p>
+<p id="demo7"></p>
+<p id="title5"></p>
+<p id="demo8"></p>
+<p id="title6"></p>
+<p id="demo9"></p>
+<p id="title7"></p>
+<p id="prac"></p>
+<p id="title8"></p>
+<p id="prac1"></p>
+<script>
+    let str = "monkey, zeebra, elephand";
+    //find lenght
+    document.getElementById("title").innerHTML =("(find length)");
+    document.getElementById("demo").innerHTML =str.length;
+    //slice/substring/substr method
+    document.getElementById("title1").innerHTML =("(slice/subString/substr method)");
+    document.getElementById("demo1").innerHTML =str.slice(7, 13);
+    document.getElementById("demo2").innerHTML =str.slice(-13,-5);
+    document.getElementById("demo3").innerHTML =str.slice(9);
+    document.getElementById("demo4").innerHTML =str.slice(-12);
+
+    //replace the elements
+    document.getElementById("title2").innerHTML =("(replace the elements)");
+    let name = "MY name is raj raj";
+    document.getElementById("demo5").innerHTML = name.replace("raj", "sanjay");;
+
+    //toUpperCase
+    document.getElementById("title3").innerHTML =("(toUpperCase)");
+    let up =name.toUpperCase();
+    document.getElementById("demo6").innerHTML =up;
+    
+    //toLowerCase
+    document.getElementById("title4").innerHTML =("(toLowerCase)");
+    let low =name.toLowerCase();
+    document.getElementById("demo7").innerHTML =low;
+
+    //concat
+    document.getElementById("title5").innerHTML =  ("(concat)");
+    let text1 = "Hello";
+    let text2 = "World";
+    let text3 = text1.concat(" ", text2)
+    document.getElementById("demo8").innerHTML =text3;
+
+    //trim
+    document.getElementById("title6").innerHTML =("(trim)");
+    let text4 ="            hello everyone    ";
+    document.getElementById("demo9").innerHTML =text4.trim();
+    
+    //padstart
+    document.getElementById("title7").innerHTML =("(padstart)");
+    let paStart = "7";
+    document.getElementById("prac").innerHTML = paStart.padStart(4,0);
+
+    //padEnd
+    document.getElementById("title8").innerHTML =("(padEnd)");
+    let paEnd = "9";
+    document.getElementById("prac1").innerHTML = paEnd.padEnd(7,2);
+    
+
+
+
+</script>
+
+</body>
+</html>
