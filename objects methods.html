@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>object methods</h2>
+<p id="title"></p>
+<p id="demo"></p>
+<p id="title1"></p>
+<p id="demo1"></p>
+<p id="title2"></p>
+<p id="demo2"></p>
+<p id="title3"></p>
+<script>
+    //basic object declaration
+ document.getElementById("title").innerHTML=("(object declaration)");   
+const person ={
+    firstName : "raj",
+    lastName : "sanjay",
+    id :44444,
+    fullName:function(){
+        return this.firstName +" "+ this.lastName;
+    }
+};
+document.getElementById("demo").innerHTML= person.fullName();
+
+//add method
+document.getElementById("title1").innerHTML=("(add a method)");
+document.getElementById("demo1").innerHTML =
+"My name is " + person.fullName();
+
+//toUpperCase
+document.getElementById("title2").innerHTML=("(toUpperCase)");
+document.getElementById("demo2").innerHTML =
+"My name is " + person.fullName().toUpperCase();
+
+//toLowerCase
+document.getElementById("title3").innerHTML=("(toLowerCase)");
+document.getElementById("demo3").innerHTML =
+"My name is " + person.fullName().toLowerCase();
+
+        </script>
+    </body>
+</html>
