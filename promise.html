@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> use promise</h2>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+let promise = new Promise(function(true1, false1) {
+  let i = 5;
+
+  if (i == 5) {
+    true1("value is correct");
+  } else {
+    false1("value is wrong");
+  }
+});
+
+promise.then( function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+  );
+
+</script>
+
+</body>
+</html>
